@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+  <html>
+
+       <head>
+
+          <title>
+
+               MY FAMILY BOOK 
+
+          </title>
+          <link rel="stylesheet" type="text/css" href="style.css">
+
+       </head>
+
+       <body>
+      
+          <center>
+
+          <h1>
+
+               My Family Book
+               
+          </h1>
+
+          <img id="img1" src="fampic.jpg">
+
+          <p id="name">  </p>
+
+          <div>
+
+            <button type= "button" onclick="nextslide()"> Next </button>
+
+          </div>
+
+     </center>
+
+       </body>
+
+       <script>
+
+          var names = [ "Father", "Mother", "Me"];
+
+         var imgs = [ "father.jpg", "mother.jpg", "daughter.jpg" ];
+
+         var i = 0;
+
+         function nextslide()
+         {
+         document.getElementById("name").innerHTML=names[i];
+         document.getElementById("img1").src=imgs[i];
+          i++
+         }
+
+       </script>
+
+  </html>
